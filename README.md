@@ -8,12 +8,12 @@ This library is composed of several components to be used in your projects. Now 
 
 ### Dropdown
 
-| Props      | Type                                  | Description                                   |
-| ---------- | ------------------------------------- | --------------------------------------------- |
-| forLabel   | string                                | htmlFor attribute for the label               |
-| titleLabel | string                                | label value                                   |
-| options    | [{ display: string; value: string; }] | options for the select to be populated        |
-| onChangeCb | () => void                            | callback called whenever a option is selected |
+| Props      | Type                                  | Description                                    |
+| ---------- | ------------------------------------- | ---------------------------------------------- |
+| forLabel   | string                                | htmlFor attribute for the label                |
+| titleLabel | string                                | label value                                    |
+| options    | [{ display: string; value: string; }] | options for the select to be populated         |
+| onChangeCb | () => void                            | callback called whenever an option is selected |
 
 ### Table
 
@@ -33,7 +33,7 @@ npm run storybook
 
 ```sh
 npm run build
-npm run storybook
+npm run storybook-yarn
 ```
 
 ### Test.

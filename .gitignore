@@ -2,5 +2,4 @@ node_modules/
 lib/
 coverage/
 .vscode/
-.storybook/
 package-lock.json
