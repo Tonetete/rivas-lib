@@ -1,4 +1,4 @@
-A simple library componets for testing purposes.
+A simple library componets for testing purposes for lottoland code challenge.
 
 # Rivas-lib
 
