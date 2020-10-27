@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import "./dropdown.style.css";
 export interface Props {
   forLabel?: string;
   titleLabel: string;
@@ -32,6 +32,7 @@ const Dropdown = ({ forLabel, titleLabel, options, onChangeCb }: Props) => {
     <div>
       <label htmlFor={forLabelValue}>{titleLabel}</label>
       <select
+        className="select"
         defaultValue={defaultOption.value}
         onChange={(evt) => onChangeCb(evt.currentTarget.value)}
         name={forLabelValue}
