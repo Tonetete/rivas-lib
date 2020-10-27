@@ -57,11 +57,14 @@ const getRows = ({ columns, rows }): React.ReactElement =>
   ));
 
 const Table = ({ columns, rows }: { columns: Column[]; rows: Row[] }) => {
-  const { useReducer } = React;
+  const { useReducer, useEffect } = React;
   const [state, dispatch] = useReducer(
     reducer,
     initialState({ columns, rows })
   );
+  useEffect(() => {
+    dispatch({ type: actions.SET_ROWS, payload: { rows } });
+  }, [rows]);
 
   return (
     <table id="table">

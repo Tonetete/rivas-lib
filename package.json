@@ -1,13 +1,13 @@
 {
   "name": "rivas-lib",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "components library",
   "main": "lib/src/index.js",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc --noEmit && babel --extensions '.tsx','.ts','.js','.jsx' ./src -d ./lib --copy-files",
+    "build": "rm -rf lib/ && tsc --noEmit && babel --extensions '.tsx','.ts','.js','.jsx' ./src -d ./lib --copy-files",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "storybook": "start-storybook -p 6006",
