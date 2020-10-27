@@ -17,7 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test",
+      "pre-commit": "npm run test:coverage",
       "pre-push": "npm version minor"
     }
   },
