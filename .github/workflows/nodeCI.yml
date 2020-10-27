@@ -10,6 +10,7 @@ jobs:
       matrix:
         node-version: [12.x]
     env:
+      DEFAULT_BRANCH: main
       CI: true
 
     steps:
@@ -48,6 +49,6 @@ jobs:
           git config user.name ${{ secrets.USERNAME }}
 
       - name: Publish
-        run: npm publish
+        run: npm publish && npm version minor
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

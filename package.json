@@ -1,6 +1,6 @@
 {
   "name": "rivas-lib",
-  "version": "1.6.0",
+  "version": "1.5.0",
   "description": "components library",
   "main": "lib/src/index.js",
   "files": [
@@ -17,8 +17,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test:coverage",
-      "pre-push": "npm version minor"
+      "pre-commit": "npm run test:coverage"
     }
   },
   "author": "",
