@@ -3,3 +3,4 @@ lib/
 coverage/
 .vscode/
 .storybook/
+package-lock.json
