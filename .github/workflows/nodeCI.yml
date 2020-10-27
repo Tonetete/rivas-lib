@@ -40,3 +40,11 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Publish
+      - uses: actions/setup-node@v1
+        with:
+          registry-url: "https://registry.npmjs.org"
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
