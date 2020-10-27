@@ -7,9 +7,10 @@
     "lib/**/*"
   ],
   "scripts": {
-    "build": "rm -rf lib/ && tsc --noEmit && babel --extensions '.tsx','.ts','.js','.jsx' ./src -d ./lib --copy-files",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
+    "build": "rm -rf lib/ && tsc --noEmit && babel --extensions '.tsx','.ts','.js','.jsx' ./src -d ./lib  --ignore 'src/**/*.test.js','src/**/*.test.tsx','src/**/*.stories.tsx','src/**/*.stories.js' --no-copy-ignored --copy-files",
+    "test": "jest --silent --coverage=false --detectOpenHandles",
+    "test:verbose": "jest --coverage=false --detectOpenHandles",
+    "test:coverage": "jest --silent --coverage=true --detectOpenHandles",
     "storybook": "start-storybook -p 6006",
     "storybook-yarn": "yarn storybook --no-dll",
     "build-storybook": "build-storybook"
