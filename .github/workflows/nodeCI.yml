@@ -42,6 +42,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Setup GIT
+        run: |
+          git config user.email ${{ secrets.EMAIL }}
+          git config user.name ${{ secrets.USERNAME }}
+
       - name: Publish
         run: npm version minor && npm publish
         env:
