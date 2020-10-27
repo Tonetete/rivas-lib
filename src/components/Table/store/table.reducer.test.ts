@@ -1,5 +1,5 @@
 import { getData } from "../__mocks__/table";
-import { actions, reducer } from "./table.reducer";
+import { actions, reducer } from "./Table.reducer";
 
 const data = getData();
 
@@ -20,19 +20,19 @@ describe("Table Reducer Unit Test", () => {
   it("WHEN call SET_ROWS action THEN should return state with new 'rows'", () => {
     const state = reducer(initialState, {
       type: actions.SET_ROWS,
-      payload: { rows: [{ number: "1" }] },
+      payload: { rows: [{ value: "1" }] },
     });
 
-    expect(state.rows).toEqual([{ number: "1" }]);
+    expect(state.rows).toEqual([{ value: "1" }]);
   });
 
   it("WHEN call SET_SORTING action THEN should return state with new 'sorting'", () => {
     const state = reducer(initialState, {
       type: actions.SET_SORTING,
-      payload: { sorting: [{ number: true }] },
+      payload: { sorting: [{ value: true }] },
     });
 
-    expect(state.sorting).toEqual([{ number: true }]);
+    expect(state.sorting).toEqual([{ value: true }]);
   });
 
   it("WHEN call without action THEN should return state", () => {

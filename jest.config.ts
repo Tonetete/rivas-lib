@@ -35,7 +35,14 @@ export default {
   coverageReporters: ["json", "text", "lcov", "clover"],
 
   // An object that configures minimum threshold enforcement for coverage results
-  // coverageThreshold: undefined,
+  coverageThreshold: {
+    global: {
+      statements: 90,
+      branches: 60,
+      lines: 90,
+      functions: 75,
+    },
+  },
 
   // A path to a custom dependency extractor
   // dependencyExtractor: undefined,
