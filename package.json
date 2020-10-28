@@ -1,6 +1,6 @@
 {
   "name": "rivas-lib",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "components library",
   "main": "lib/src/index.js",
   "files": [
