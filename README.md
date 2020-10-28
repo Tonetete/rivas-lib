@@ -30,7 +30,7 @@ NodeJS 12.x previously installed.
 
 ```sh
 npm install
-npm run storybook
+npm run storybook-yarn
 ```
 
 ### Build.
