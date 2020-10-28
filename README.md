@@ -44,3 +44,9 @@ npm run build
 ```sh
 npm run test
 ```
+
+### WARN: Upgrade version package before make some push from main branch.
+
+```sh
+npm version <major|minor|patch>
+```
