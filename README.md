@@ -22,6 +22,10 @@ This library is composed of several components to be used in your projects. Now 
 | columns | [{id: string; title: string; }] | columns for the table headers |
 | rows    | [{[key: string]: any }]         | rows for the table rows       |
 
+## Requirements.
+
+NodeJS 12.x previously installed.
+
 ## How to run in local.
 
 ```sh
@@ -33,7 +37,6 @@ npm run storybook
 
 ```sh
 npm run build
-npm run storybook-yarn
 ```
 
 ### Test.
